@@ -1,6 +1,10 @@
-# AngularProject1
-
+# Quote It
+####  This is a project that a user can view quotes, write a new quote,vote on a quote and delete a quote.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.0.
+Live link 
+#### By Jessica Mwangi
+## Description
+This project that allows a user to be able to view some sample quotes from other people, to be able to add quotes, vote on the quotes and be able to view the most popular vote and you can delete quotes.
 
 ## Development server
 
@@ -25,3 +29,17 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Technologies Used
+Technologies used in this webpage are 
+HTML.
+
+CSS.
+
+JavaScript.
+
+TypeScript.
+
+### License
+Copyright (c) [2022] [Jessica Mwangi.]
+[MIT License](https://choosealicense.com/licenses/mit/)
