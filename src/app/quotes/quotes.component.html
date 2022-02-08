@@ -27,14 +27,14 @@
                         <hr>
                         <p><i class="fas fa-quote-left pr-1"></i>{{Quotes.quote}}<i class="fas fa-quote-right pl-1"></i>
                         </p>
-                        <span class="row">Submitted By: <h5 class="deep-orange-text pl-3">{{Quotes.user}}
+                        <span class="row">Written By: <h5 class="deep-orange-text pl-3">{{Quotes.user}}
                             </h5>
                             <h5 class="pl-5">{{Quotes.date |dateCount}} days ago</h5>
                         </span>
                         <div class="row ">
-                            <i class="far fa-thumbs-up h1 pr-4" (click)='upVote(Quotes)'></i>
-                            <i class="far fa-thumbs-down h1" (click)='downVote(Quotes)'></i>
-                            <span class="delete" (click)='deleteQuote($event,mIndex)' aria-hidden="true"><i
+                            <i class="far fa-thumbs-up h1 pr-4" (click)='upVote(Quotes)'></i>{{Quotes.upvotes}}
+                            <i class="far fa-thumbs-down h1" (click)='downVote(Quotes)'></i>{{Quotes.downvotes}}
+                            <span class="delete" (click)= 'quoteDelete($event,mIndex)' aria-hidden="true"><i
                                     class="fa fa-trash"></i></span>
                         </div>
                         <span class="pr-5">{{Quotes.upvotes}}</span>

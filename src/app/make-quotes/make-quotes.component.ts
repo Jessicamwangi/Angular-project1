@@ -11,19 +11,12 @@ export class MakeQuotesComponent implements OnInit {
 
   newQuote = new Quote(0, '', '', '', new Date(), 0, 0);
 
-  @Input() quote!: Quote;
 
   @Output() addQuote = new EventEmitter<Quote>()
 
   submitQuote() {
-
+    console.log(this.newQuote)
     this.addQuote.emit(this.newQuote);
-
-  }
-  resetFields() {
-    this.newQuote.author = '';
-    this.newQuote.quote = '';
-    this.newQuote.user = '';
 
   }
 
