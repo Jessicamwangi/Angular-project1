@@ -1,5 +1,6 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output, Input } from '@angular/core';
 import {  Quote } from '../quote';
+
 
 @Component({
   selector: 'app-make-quotes',
@@ -9,6 +10,8 @@ import {  Quote } from '../quote';
 export class MakeQuotesComponent implements OnInit {
 
   newQuote = new Quote(0, '', '', '', new Date(), 0, 0);
+
+  @Input() quote!: Quote;
 
   @Output() addQuote = new EventEmitter<Quote>()
 

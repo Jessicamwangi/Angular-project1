@@ -15,7 +15,11 @@ export class QuotesComponent implements OnInit {
     new Quote(3, "Your time is limited, so don’t waste it living someone else’s life. Don’t be trapped by dogma – which is living with the results of other people’s thinking",  "Steve Jobs","Felix", new Date(2022, 2, 8), 0, 0),
 
   ];
-
+newQuote($event:any) {}
+bestmQuote() {}
+upVote(Quotes:any) {}
+downVote(Quotes:any) {}
+deleteQuote($event:any,mIndex:any) {}
   constructor() { }
 
   ngOnInit(): void {
