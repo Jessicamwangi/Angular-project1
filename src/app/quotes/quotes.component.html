@@ -47,26 +47,26 @@
             </div>
 
         </div>
-        <div class="row pt-5" *ngFor="let mQuote of mQuotes;let mIndex =index" height=18px>
+        <div class="row pt-5" *ngFor="let Quotes of Quotes;let mIndex =index" height=18px>
             <div class="col-sm">
                 <div class="card testimonial-card">
                     <div class="card-body">
-                        <h4 class="card-title text-secondary text-uppercase">{{mQuote.author}}</h4>
+                        <h4 class="card-title text-secondary text-uppercase">{{Quotes.author}}</h4>
                         <hr>
-                        <p><i class="fas fa-quote-left pr-1"></i>{{mQuote.quote}}<i class="fas fa-quote-right pl-1"></i>
+                        <p><i class="fas fa-quote-left pr-1"></i>{{Quotes.quote}}<i class="fas fa-quote-right pl-1"></i>
                         </p>
-                        <span class="row">Submitted By: <h5 class="deep-orange-text pl-3">{{mQuote.user}}
+                        <span class="row">Submitted By: <h5 class="deep-orange-text pl-3">{{Quotes.user}}
                             </h5>
-                            <h5 class="pl-5">{{mQuote.date |dateCount}} days ago</h5>
+                            <h5 class="pl-5">{{Quotes.date |dateCount}} days ago</h5>
                         </span>
                         <div class="row ">
-                            <i class="far fa-thumbs-up h1 pr-4" (click)='upVote(mQuote)'></i>
-                            <i class="far fa-thumbs-down h1" (click)='downVote(mQuote)'></i>
+                            <i class="far fa-thumbs-up h1 pr-4" (click)='upVote(Quotes)'></i>
+                            <i class="far fa-thumbs-down h1" (click)='downVote(Quotes)'></i>
                             <span class="delete" (click)='deleteQuote($event,mIndex)' aria-hidden="true"><i
                                     class="fa fa-trash"></i></span>
                         </div>
-                        <span class="pr-5">{{mQuote.upvotes}}</span>
-                        <span class="pr-5">{{mQuote.downvotes}}</span>
+                        <span class="pr-5">{{Quotes.upvotes}}</span>
+                        <span class="pr-5">{{Quotes.downvotes}}</span>
 
                     </div>
                 </div>

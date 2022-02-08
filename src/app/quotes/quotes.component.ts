@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {  Quote } from '../quotes';
+import {  Quote } from '../quote';
 
 @Component({
   selector: 'app-quotes',
@@ -8,7 +8,7 @@ import {  Quote } from '../quotes';
 })
 export class QuotesComponent implements OnInit {
 
-  mQuotes: Quote[] = [
+    Quotes: Quote[] = [
     new Quote(0, "If you want to live a happy life, tie it to a goal, not to people or things.", "Albert Einstein", new Date(2022, 2, 5), 0, 0),
     new Quote(1, "Money and success don’t change people; they merely amplify what is already there.", "Will  Smith", new Date(2022, 2, 6), 0, 0),
     new Quote(2, "Turn your wounds into wisdom.",  "Oprah Winfrey", new Date(2022, 2, 7), 0, 0),
