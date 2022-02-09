@@ -7,8 +7,7 @@ import {  Quote } from '../quote';
   styleUrls: ['./quotes.component.css']
 })
 export class QuotesComponent implements OnInit {
-  upvotes = 0;
-  downvotes = 0;
+  
   isComplete= true;
 
 

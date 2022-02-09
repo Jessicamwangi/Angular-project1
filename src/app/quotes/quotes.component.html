@@ -32,8 +32,8 @@
                             <h5 class="pl-5">{{Quotes.date |dateCount}} days ago</h5>
                         </span>
                         <div class="row ">
-                            <i class="far fa-thumbs-up h1 pr-4" (click)='upVote(Quotes)'></i>{{Quotes.upvotes}}
-                            <i class="far fa-thumbs-down h1" (click)='downVote(Quotes)'></i>{{Quotes.downvotes}}
+                            <i class="far fa-thumbs-up h1 pr-4" (click)='upVote(Quotes)'></i>
+                            <i class="far fa-thumbs-down h1" (click)='downVote(Quotes)'></i>
                             <span class="delete" (click)= 'quoteDelete($event,mIndex)' aria-hidden="true"><i
                                     class="fa fa-trash"></i></span>
                         </div>
