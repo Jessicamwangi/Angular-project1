@@ -1,7 +1,8 @@
 # Quote It
 ####  This is a project that a user can view quotes, write a new quote,vote on a quote and delete a quote.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.0.
-Live link 
+
+Live link is in the about 
 #### By Jessica Mwangi
 ## Description
 This project that allows a user to be able to view some sample quotes from other people, to be able to add quotes, vote on the quotes and be able to view the most popular vote and you can delete quotes.
